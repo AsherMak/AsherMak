@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 
-/*need to fix this // this is for configuring the scaling to match all devices// also try to make header and welcome transparent*/
+/*need to fix this // this is for configuring the scaling to match all devices// also try to make header and welcome transparent// */
  
 			body, html {
 				background-image: url('whiteflower.jpg');
@@ -32,22 +32,43 @@
 				padding: 10px;
 				}
 
+			/* unvisited link */
+				a:link {
+ 				 color: grey;
+				}
+
+	       		/* visited link */
+				a:visited {
+				  color: green;
+				}
+
+			/* mouse over link */
+				a:hover {
+				  color: red;
+				}
+
+			/* selected link */
+				a:active {
+				  color: yellow;
+				 }
+
 
 		</style>
   </head>
 	<body>
 		<font color="#000000">
 			<div class="header">
-				<h1 style="font-size:5vmin"><center><font face="verdana">Development. Dedication. Daring.</font></center></h1>
+				<h1 style="font-size:5vmin"><center><font face="verdana">Development. Dedication. Daunting.</font></center></h1>
 			</div>
+
 			<div class="welcome" >
-			<h2 style="font-size:4vmin"><center>My Personal Portfolio.<center></h2>
+			<h2 style="font-size:4vmin"><font face="verdana"><center>My Personal Portfolio.</center></font></h2>
 			</div>
 			</div>
 
 				<p><font size="30" color="#999897"><center>Welcome Asher</center></font></p>
 
-			<button style="color:red"><a href="https://www.w3schools.com/html/html_basic.asp">TESTING LINK</a></button>
+			<a href="https://www.w3schools.com/html/html_basic.asp">TESTING LINK</a>
 		</font>
 	</body>
 
