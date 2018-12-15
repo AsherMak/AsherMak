@@ -5,69 +5,84 @@
 
   <head>
     <title>Asher Mak</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 
-/*need to fix this // this is for configuring the scaling to match all devices// also try to make header and welcome transparent*/
- 
+/*telling that the body, and all these headers will foloow the font family "lato", sans-serif"*/
+
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+/*configurs the default body and text color of paragraphs*/
+
 			body, html {
-				background-image: url('whiteflower.jpg');
-				background-color: #ffffff;
-				width: 100%; height: 100%;
-				background-repeat: no-repeat;
+				height: 100%;
+				color: #5b5b5b;
+				line-height: 1.5;
+			}
+/*changing the "Parallax effect" // list backgrond images... they will follow the following commands */
+/* use ".variable" to create a variable*/
+
+			.background1, .background2, {
 				background-attachment: fixed;
-				background-position: right bottom;
-				}
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}			
 
+			.background1 {
+				background-image: url('whiteflower.jpg');
+				min-height: 100%;
+			}	
 			
-			.header {
-				background-color: #dbd9d8;
-				color: #bfbdbc;
-				padding: 10px;
-				}
+			.background2 {
+				background-image: url('whiteflower.jpg');				min-height: 30%; /*changed from 400px*/
+			
+			}
+/* .w3-wide {letter-spacing:10px;}
+.w3-hover-opacity {cursor: pointer;} I HAVE NO IDEA WHAT THIS DOES */
 
-			.welcome {
-				background-color: #e3e1df;
-				color: #bfbdbc;
-				padding: 10px;
-				}
+/* Turn off the cool scrolling mode for mobiles breakpoint at 1600px */
+@media only screen and (max-device-width: 1600px) {
+	.background1, .background2 {
+		background-attachment: scroll;
+		min-height: 400px;
+		}
+	}
 
-			/* unvisited link */
-				a:link {
- 				 color: #000000;
-				}
-
-	       		/* visited link */
-				a:visited {
-				  color: green;
-				}
-
-			/* mouse over link */
-				a:hover {
-				  color: #ffffff;
-				}
-
-			/* selected link */
-				a:active {
-				  color: yellow;
-				 }
 
 
 		</style>
   </head>
+
 	<body>
-		<font color="#000000">
-			<div class="header">
-				<h1 style="font-size:5vmin"><center><font face="verdana">Development. Dedication. Daunting.</font></center></h1>
-			</div>
-			<div class="welcome" >
-			<a href="personalprofile.html"><h2 style="font-size:4vmin"><font face="verdana" color="bfbdbc"><center>My Personal Portfolio.</center></font></h2></a>
-			</div>
-			</div>
 
-				<p><font size="30" color="#999897"><center>Welcome Asher</center></font></p>
 
-		</font>
+<!-- first background image -->
+	<div class="background1 w3-display-container w3-opacity-min" id="home">
+		<div class="w3-display-middle" style="white-space:nowrap;">
+	<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Test</span>
+		</div>
+	</div>
+
+
+
+<!-- Paragraph after the first image -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+	<h3 class="w3-center">Test</h3>
+	<p class="w3-center"><em>subtitle</em></p>
+	<p class="w3-center">paragraph</p>
+
+<!-- secound background image -->
+	<div class="background2 w3-display-container w3-opacity-min">
+		<div class="w3-display-middle">
+	<span class="w3-xxlarge w3-text-while w3-wide">Test</span>
+		</div>
+	</div>
+	
 	</body>
 
 </html>
